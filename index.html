@@ -27,157 +27,161 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container header">
-      <div class="row">
-        <div class="col">
-          <h1>Austin</h1>
-          <h6>Current Date and Time</h6>
-          <h2 class="current-degree">17</h2>
-          <h2 id="current-degree">º</h2>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col">
+              <h1>Austin</h1>
+              <h6>Current Date and Time</h6>
+              <h2 class="current-degree">17</h2>
+              <h2 id="current-degree">º</h2>
 
-          <div class="row current-conditions">
-            <div class="col current-icon">
-              <i class="fa-solid fa-cloud-bolt"></i>
+              <div class="row current-conditions">
+                <div class="col current-icon">
+                  <i class="fa-solid fa-cloud-bolt"></i>
+                </div>
+
+                <div class="col current-weather">
+                  <h3>
+                    Thunderstorms
+                    <br />
+                    88% Humidity
+                    <br />
+                    Wind S 16mph
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div class="col current-weather">
-              <h3>
-                Thunderstorms
-                <br />
-                88% Humidity
-                <br />
-                Wind S 16mph
-              </h3>
+            <div class="col-2 metric">
+              <h3 id="metric-select-c">ºC</h3>
+              <h3>|</h3>
+              <h3 id="metric-select-f">ºF</h3>
+            </div>
+
+            <div class="col-5 search">
+              <form id="search-field">
+                <input
+                  action="input"
+                  type="text"
+                  placeholder="Search for a city"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="city-search"
+                />
+                <input type="submit" value="Search" />
+              </form>
             </div>
           </div>
-        </div>
-
-        <div class="col-2 metric">
-          <h3 id="metric-select-c">ºC</h3>
-          <h3>|</h3>
-          <h3 id="metric-select-f">ºF</h3>
-        </div>
-
-        <div class="col-5 search">
-          <form id="search-field">
-            <input
-              action="input"
-              type="text"
-              placeholder="Search for a city"
-              autocomplete="off"
-              autofocus="on"
-              id="city-search"
-            />
-            <input type="submit" value="Search" />
-          </form>
         </div>
       </div>
-    </div>
 
-    <div class="container daily">
-      <h5 class="five-day">5 Day Forecast</h5>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <div class="col"><h4 class="today">Today</h4></div>
-            </div>
-            <div class="card-body">
-              <div class="row cond-icons">
-                <div class="col">
-                  <i class="fa-regular fa-sun"></i>
-                </div>
+      <div class="container daily">
+        <h5 class="five-day">5 Day Forecast</h5>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="col"><h4 class="today">Today</h4></div>
               </div>
-              <footer>
-                <div class="col">
-                  <h4><strong>75º</strong></h4>
-                  <h5>54º</h5>
+              <div class="card-body">
+                <div class="row cond-icons">
+                  <div class="col">
+                    <i class="fa-regular fa-sun"></i>
+                  </div>
                 </div>
-              </footer>
+                <footer>
+                  <div class="col">
+                    <h4><strong>75º</strong></h4>
+                    <h5>54º</h5>
+                  </div>
+                </footer>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <div class="col"><h4>12/10</h4></div>
-            </div>
-            <div class="card-body">
-              <div class="row cond-icons">
-                <div class="col">
-                  <i class="fa-solid fa-cloud-sun"></i>
-                </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="col"><h4>12/10</h4></div>
               </div>
-              <footer>
-                <div class="col">
-                  <h4><strong>68º</strong></h4>
-                  <h5>49º</h5>
+              <div class="card-body">
+                <div class="row cond-icons">
+                  <div class="col">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
                 </div>
-              </footer>
+                <footer>
+                  <div class="col">
+                    <h4><strong>68º</strong></h4>
+                    <h5>49º</h5>
+                  </div>
+                </footer>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <div class="col"><h4>12/11</h4></div>
-            </div>
-            <div class="card-body">
-              <div class="row cond-icons">
-                <div class="col">
-                  <i class="fa-solid fa-wind"></i>
-                </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="col"><h4>12/11</h4></div>
               </div>
-              <footer>
-                <div class="col">
-                  <h4><strong>65º</strong></h4>
-                  <h5>42º</h5>
+              <div class="card-body">
+                <div class="row cond-icons">
+                  <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
                 </div>
-              </footer>
+                <footer>
+                  <div class="col">
+                    <h4><strong>65º</strong></h4>
+                    <h5>42º</h5>
+                  </div>
+                </footer>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <div class="col"><h4>12/12</h4></div>
-            </div>
-            <div class="card-body">
-              <div class="row cond-icons">
-                <div class="col">
-                  <i class="fa-solid fa-cloud-showers-heavy"></i>
-                </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="col"><h4>12/12</h4></div>
               </div>
-              <footer>
-                <div class="col">
-                  <h4><strong>46º</strong></h4>
-                  <h5>29º</h5>
+              <div class="card-body">
+                <div class="row cond-icons">
+                  <div class="col">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                  </div>
                 </div>
-              </footer>
+                <footer>
+                  <div class="col">
+                    <h4><strong>46º</strong></h4>
+                    <h5>29º</h5>
+                  </div>
+                </footer>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <div class="col"><h4>12/13</h4></div>
-            </div>
-            <div class="card-body">
-              <div class="row cond-icons">
-                <div class="col">
-                  <i class="fa-regular fa-snowflake"></i>
-                </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="col"><h4>12/13</h4></div>
               </div>
-              <footer>
-                <div class="col">
-                  <h4><strong>38º</strong></h4>
-                  <h5>18º</h5>
+              <div class="card-body">
+                <div class="row cond-icons">
+                  <div class="col">
+                    <i class="fa-regular fa-snowflake"></i>
+                  </div>
                 </div>
-              </footer>
+                <footer>
+                  <div class="col">
+                    <h4><strong>38º</strong></h4>
+                    <h5>18º</h5>
+                  </div>
+                </footer>
+              </div>
             </div>
           </div>
         </div>
