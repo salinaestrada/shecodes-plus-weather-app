@@ -34,6 +34,20 @@ small {
   padding: 40px;
 }
 
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #bdc1c6;
+  border-radius: 25px;
+}
+
+#search-form {
+  padding: 25px;
+}
+
 .container {
   margin: 0;
   text-align: center;
@@ -64,12 +78,6 @@ h3.metric-select:hover {
 .cond-icons {
   font-size: 35px;
   color: #34495e;
-}
-
-.daily {
-  margin-top: 25px;
-  position: relative;
-  left: 25px;
 }
 
 .days {
