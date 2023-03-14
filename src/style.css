@@ -105,11 +105,12 @@ small {
   border-radius: 20px;
 }
 
-#search-form {
-}
-
 .container {
   margin: 0;
+}
+
+.container-daily {
+  padding: 20px;
 }
 
 .current-icon {

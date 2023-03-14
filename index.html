@@ -19,13 +19,15 @@
       rel="stylesheet"
     />
 
-    <!-- <script
+    <!-- font awesome icons -->
+    <script
       src="https://kit.fontawesome.com/49b8cd7e9a.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
 
     <title>Weather App</title>
   </head>
+
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
@@ -60,7 +62,7 @@
               </div>
               <div class="col" id="weather-details">
                 <ul>
-                  <li>Feels like: <span id="feel">20</span>º</li>
+                  <li>Feels like: <span id="feel"></span>º</li>
                   <li>Humidity: <span id="humidity"> </span>%</li>
                   <li>Wind: <span id="wind"></span>mph</li>
                 </ul>
@@ -76,137 +78,115 @@
             </div>
           </div>
 
-          <!-- <div class="row current-conditions">
-              <div class="col current-icon">
-                <i class="fa-solid fa-cloud-bolt"></i>
+          <div class="container-daily">
+            <h5 class="five-day">5 Day Forecast</h5>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="col"><h4 class="today">date</h4></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row cond-icons">
+                      <div class="col">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="col">
+                        <h4><strong>highº</strong></h4>
+                        <h5>lowº</h5>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
               </div>
 
-              <div class="col current-weather">
-                <h3>
-                  Thunderstorms
-                  <br />
-                  88% Humidity
-                  <br />
-                  Wind S 16mph
-                </h3>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="col"><h4>date</h4></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row cond-icons">
+                      <div class="col">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="col">
+                        <h4><strong>highº</strong></h4>
+                        <h5>lowº</h5>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="col"><h4>date</h4></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row cond-icons">
+                      <div class="col">
+                        <i class="fa-solid fa-wind"></i>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="col">
+                        <h4><strong>highº</strong></h4>
+                        <h5>lowº</h5>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="col"><h4>date</h4></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row cond-icons">
+                      <div class="col">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="col">
+                        <h4><strong>highº</strong></h4>
+                        <h5>lowº</h5>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="col"><h4>date</h4></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row cond-icons">
+                      <div class="col">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="col">
+                        <h4><strong>highº</strong></h4>
+                        <h5>lowº</h5>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-2 metric">
-            <h3 id="metric-select-c">ºC</h3>
-            <h3>|</h3>
-            <h3 id="metric-select-f">ºF</h3>
-          </div>
-        </div>
-
-        <div class="container daily">
-          <h5 class="five-day">5 Day Forecast</h5>
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="col"><h4 class="today">Today</h4></div>
-                </div>
-                <div class="card-body">
-                  <div class="row cond-icons">
-                    <div class="col">
-                      <i class="fa-regular fa-sun"></i>
-                    </div>
-                  </div>
-                  <footer>
-                    <div class="col">
-                      <h4><strong>75º</strong></h4>
-                      <h5>54º</h5>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="col"><h4>12/10</h4></div>
-                </div>
-                <div class="card-body">
-                  <div class="row cond-icons">
-                    <div class="col">
-                      <i class="fa-solid fa-cloud-sun"></i>
-                    </div>
-                  </div>
-                  <footer>
-                    <div class="col">
-                      <h4><strong>68º</strong></h4>
-                      <h5>49º</h5>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="col"><h4>12/11</h4></div>
-                </div>
-                <div class="card-body">
-                  <div class="row cond-icons">
-                    <div class="col">
-                      <i class="fa-solid fa-wind"></i>
-                    </div>
-                  </div>
-                  <footer>
-                    <div class="col">
-                      <h4><strong>65º</strong></h4>
-                      <h5>42º</h5>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="col"><h4>12/12</h4></div>
-                </div>
-                <div class="card-body">
-                  <div class="row cond-icons">
-                    <div class="col">
-                      <i class="fa-solid fa-cloud-showers-heavy"></i>
-                    </div>
-                  </div>
-                  <footer>
-                    <div class="col">
-                      <h4><strong>46º</strong></h4>
-                      <h5>29º</h5>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <div class="col"><h4>12/13</h4></div>
-                </div>
-                <div class="card-body">
-                  <div class="row cond-icons">
-                    <div class="col">
-                      <i class="fa-regular fa-snowflake"></i>
-                    </div>
-                  </div>
-                  <footer>
-                    <div class="col">
-                      <h4><strong>38º</strong></h4>
-                      <h5>18º</h5>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div> -->
         </div>
       </div>
     </div>
@@ -216,7 +196,6 @@
       >, by Salina ✌️</small
     >
   </body>
-
   <script src="src/index.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
